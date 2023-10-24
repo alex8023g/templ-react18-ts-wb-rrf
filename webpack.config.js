@@ -26,6 +26,26 @@ module.exports = {
         include: path.join(__dirname, 'src'),
         use: 'babel-loader',
       },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: 'local',
+                localIdentName: '[name]__[local]--[hash:base64:5]',
+              },
+            },
+          },
+        ],
+        exclude: /\.global\.css$/,
+      },
+      {
+        test: /\.global\.css/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [

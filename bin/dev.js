@@ -48,9 +48,9 @@ app.use(
 app.listen(3001, () => console.log('App is listening on port 3001!'));
 
 nodemon({
-  script: path.resolve(__dirname, '../server/server.js'),
+  script: path.resolve(__dirname, '../src/server/server.js'),
   watch: [
     // path.resolve(__dirname, "../dist"),
-    path.resolve(__dirname, '../server/server.js'),
+    path.resolve(__dirname, '../src/server/server.js'),
   ],
 });
