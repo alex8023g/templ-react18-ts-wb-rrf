@@ -10,7 +10,7 @@ module.exports = {
   mode: isDevelopment ? 'development' : 'production',
   entry: {
     main: [
-      'webpack-hot-middleware/client?path=//localhost:3001/__webpack_hmr',
+      'webpack-hot-middleware/client?path=//localhost:3001/hmr/__webpack_hmr',
       './src/index.js',
     ],
   },
