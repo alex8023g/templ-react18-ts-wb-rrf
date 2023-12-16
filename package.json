@@ -11,8 +11,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.8",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
     "@gatsbyjs/webpack-hot-middleware": "^2.25.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
     "@types/react": "^18.2.31",
