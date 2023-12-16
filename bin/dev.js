@@ -40,7 +40,7 @@ app.use(
   //  Ref: https://github.com/webpack-contrib/webpack-hot-middleware/pull/397
   require(`webpack-hot-middleware`)(compiler, {
     log: false,
-    path: `/__webpack_hmr`,
+    path: `/hmr/__webpack_hmr`,
     heartbeat: 10 * 1000,
   })
 );
